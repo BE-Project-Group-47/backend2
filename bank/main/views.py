@@ -32,17 +32,17 @@ def addData(request):
         # serializer.save()
     # return Response(serializer.data)
     # if request.method == "POST":
-    age = request.POST["age"]
-    income = request.POST["income"]
-    employment_length = request.POST["employment_length"]
-    loan_amount = request.POST["loan_amount"]
-    loan_intent = request.POST["loan_intent"]
-    loan_grade = request.POST["loan_grade"]
-    loan_intrest = request.POST["loan_intrest"]
-    loan_status = request.POST["loan_status"]
-    loan_percent_income = request.POST["loan_percent_income"]
-    cb_person_default_on_file = request.POST["cb_person_default_on_file"]
-    cb_credit_history_len = request.POST["cb_credit_history_len"]
+    age = request.data["age"]
+    income = request.data["income"]
+    employment_length = request.data["employment_length"]
+    loan_amount = request.data["loan_amount"]
+    loan_intent = request.data["loan_intent"]
+    loan_grade = request.data["loan_grade"]
+    loan_intrest = request.data["loan_intrest"]
+    loan_status = request.data["loan_status"]
+    loan_percent_income = request.data["loan_percent_income"]
+    cb_person_default_on_file = request.data["cb_person_default_on_file"]
+    cb_credit_history_len = request.data["cb_credit_history_len"]
     
     # try:
     # print("req:")
