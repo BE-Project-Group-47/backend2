@@ -11,7 +11,7 @@ class Banking(models.Model):
     loan_grade = models.CharField(max_length=1, default='B')
     loan_intrest = models.FloatField(default=12)
     loan_status = models.IntegerField(default=0)
-    loan_percent_income = models.FloatField(default=20000) 
+    loan_percent_income = models.FloatField(default=20.1) 
     cb_person_default_on_file = models.CharField(max_length=1,default='N')
     cb_credit_history_len = models.IntegerField(default=5)
 
